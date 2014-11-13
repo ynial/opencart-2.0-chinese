@@ -1,0 +1,25 @@
+<?php
+$_['heading_title']      = '国家设置';
+$_['text_success']      = '成功： 您已成功更新国家设置！';
+$_['text_list']      = 'Country List';
+$_['text_add']      = 'Add Country';
+$_['text_edit']      = 'Edit Country';
+$_['column_name']      = '国家名称';
+$_['column_iso_code_2']      = 'ISO 代码 (2)';
+$_['column_iso_code_3']      = 'ISO 代码 (3)';
+$_['column_action']      = '管理';
+$_['entry_name']      = '国家名称：';
+$_['entry_iso_code_2']      = 'ISO 代码 (2)：';
+$_['entry_iso_code_3']      = 'ISO 代码 (3)：';
+$_['entry_address_format']      = 'entry_postcode_required']= '邮编必填：';
+$_['entry_postcode_required']      = 'Postcode Required';
+$_['entry_status']      = '状态：';
+$_['help_address_format']      = 'First Name = {firstname}<br />Last Name = {lastname}<br />Company = {company}<br />Address 1 = {address_1}<br />Address 2 = {address_2}<br />City = {city}<br />Postcode = {postcode}<br />Zone = {zone}<br />Zone Code = {zone_code}<br />Country = {country}';
+$_['error_permission']      = '警告： 您没有权限更改国家设置！';
+$_['error_name']      = '警告： 国家名称必须在3至128个字符之间！';
+$_['error_default']      = '警告： 该国家不能删除，因为被设为网店默认国家！';
+$_['error_store']      = '警告： 该国家不能删除，因为被绑定到 %s 网店！';
+$_['error_address']      = '警告： 该国家不能删除，因为被绑定到 %s 地址簿记录！';
+$_['error_affiliate']      = '警告： 该国家不能删除，因为被绑定到 %s 加盟会员！';
+$_['error_zone']      = '警告： 该国家不能删除，因为被绑定到 %s 区域！';
+$_['error_zone_to_geo_zone']      = '警告： 该国家不能删除，因为被绑定到 %s 区域群组！';

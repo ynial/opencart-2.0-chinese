@@ -1,0 +1,20 @@
+<?php
+$_['heading_title']      = '功能菜单';
+$_['text_order']      = '订单管理';
+$_['text_order_status']      = '订单状态';
+$_['text_complete_status']      = 'Completed';
+$_['text_customer']      = '客户列表';
+$_['text_online']      = '在线用户';
+$_['text_approval']      = 'Pending approval';
+$_['text_product']      = '商品管理';
+$_['text_stock']      = 'Out of stock';
+$_['text_review']      = '商品评论';
+$_['text_return']      = '商品退换';
+$_['text_affiliate']      = '加盟会员';
+$_['text_store']      = 'Stores';
+$_['text_front']      = '商店前台';
+$_['text_help']      = '帮助中心';
+$_['text_homepage']      = 'Homepage';
+$_['text_support']      = '支援论坛';
+$_['text_documentation']      = '帮助文档';
+$_['text_logout']      = '退出系统';
