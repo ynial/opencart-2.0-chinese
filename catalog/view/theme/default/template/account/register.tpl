@@ -8,7 +8,7 @@
   <?php if ($error_warning) { ?>
   <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?></div>
   <?php } ?>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row" style='margin-left:3px'><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -51,7 +51,9 @@
               <?php } ?>
             </div>
           </div>
-          <div class="form-group required">
+          <!-- 简化注册流程 -->
+          <!-- add style display:none and remove required class-->
+          <div class="form-group" style='display:none'>
             <label class="col-sm-2 control-label" for="input-lastname"><?php echo $entry_lastname; ?></label>
             <div class="col-sm-10">
               <input type="text" name="lastname" value="<?php echo $lastname; ?>" placeholder="<?php echo $entry_lastname; ?>" id="input-lastname" class="form-control" />
@@ -60,6 +62,7 @@
               <?php } ?>
             </div>
           </div>
+
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-email"><?php echo $entry_email; ?></label>
             <div class="col-sm-10">
@@ -69,6 +72,8 @@
               <?php } ?>
             </div>
           </div>
+
+
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-telephone"><?php echo $entry_telephone; ?></label>
             <div class="col-sm-10">
@@ -78,7 +83,10 @@
               <?php } ?>
             </div>
           </div>
-          <div class="form-group">
+          
+          <!-- 简化注册流程 -->
+          <!-- add style display:none-->
+          <div class="form-group" style='display:none'>
             <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
             <div class="col-sm-10">
               <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
@@ -238,7 +246,10 @@
           <?php } ?>
           <?php } ?>
         </fieldset>
-        <fieldset id="address">
+
+        <!-- 简化注册流程 -->
+        <!-- add style display:none-->
+        <fieldset id="address" style='display:none'>
           <legend><?php echo $text_your_address; ?></legend>
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-company"><?php echo $entry_company; ?></label>
@@ -482,7 +493,9 @@
             </div>
           </div>
         </fieldset>
-        <fieldset>
+        <!-- 简化注册流程 -->
+        <!-- add style display:none-->
+        <fieldset style='display:none'>
           <legend><?php echo $text_newsletter; ?></legend>
           <div class="form-group">
             <label class="col-sm-2 control-label"><?php echo $entry_newsletter; ?></label>
@@ -507,16 +520,20 @@
         </fieldset>
         <?php if ($text_agree) { ?>
         <div class="buttons">
-          <div class="pull-right"><?php echo $text_agree; ?>
+          <div class="pull-right" >
+            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
+          </div>
+        </div>
+        <!-- 简化注册流程 开始-->
+        <div style='display:none'>
+          <?php echo $text_agree; ?>
             <?php if ($agree) { ?>
             <input type="checkbox" name="agree" value="1" checked="checked" />
             <?php } else { ?>
             <input type="checkbox" name="agree" value="1" />
             <?php } ?>
-            &nbsp;
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
-          </div>
         </div>
+        <!-- 简化注册流程 结束-->
         <?php } else { ?>
         <div class="buttons">
           <div class="pull-right">
